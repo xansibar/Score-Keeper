@@ -7,10 +7,10 @@ html {
   }
 
 body {
-    background: darkseagreen;
+    background: orange;
     margin: 0;
     padding: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
     
 }
@@ -25,8 +25,32 @@ section {
     padding: 2% 0;
 }
 
+img {
+    max-width: 60%;
+    padding: 0 5%;
+}
+
 h1 {
     font-size: 2rem;
+}
+
+h2, #playingText {
+    font-size: 2em;
+    color: #fff;
+    letter-spacing: 0.1em;
+    text-shadow: 1px 2px gray;
+}
+
+#playingText {
+    letter-spacing: 0.05em;
+}
+
+#defaultScore {
+    text-decoration: underline;
+}
+
+#leftScore, #rightScore {
+    font-size: 4rem;
 }
 
 .verde {
@@ -36,9 +60,16 @@ h1 {
 #btn1, #btn2, #btnr, #inputWin {
     padding: 10px;
     margin: 10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.2rem;
+    background-color: rgba(170, 158, 51, 0.5);
+    box-shadow: 4px 8px rgba(107, 142, 103, 0.2);
+    font-family: inherit;
 }
+
+#btn1:hover, #btn2:hover, #btnr:hover, #inputWin:hover {
+    border: rgba(60, 41, 78, 0.5) solid 2px;
+}
+
 
 p {
     font-size: 1.3em;
@@ -47,9 +78,10 @@ p {
 section, #btn1, #btn2, #btnr, #inputWin
  {
     border-radius: 10px;
-    border: solid 2px #fff;
+    border: solid 3px rgba(255, 255, 255, 0.8);
 }
 
-/* #inputWin {
-    width: 80px;
-} */
+#inputWin {
+    width: 100px;
+    font-size: 1em;
+}
